@@ -1,4 +1,4 @@
 # rock-paper-scissors
-A rock paper scissors game using Tkinter
+A Rock Paper Scissors game using Tkinter
 
 App requires Python 3
