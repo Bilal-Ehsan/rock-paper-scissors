@@ -51,7 +51,7 @@ class App:
         self.play('Scissors')
 
     def play(self, userChoice):
-        choices = ['rock', 'paper', 'scissors']
+        choices = ['Rock', 'Paper', 'Scissors']
         computerChoice = random.choice(choices)
         hasWon = True
 
@@ -76,11 +76,11 @@ class App:
             hasWon = None
 
         if hasWon == True:
-            self.winner.config(text = 'The winner is... You! 😍')
+            self.winner.config(text = 'The winner is... You! 😍', fg = 'green2')
         elif hasWon == False:
-            self.winner.config(text = 'The winner is... Me! 😥')
+            self.winner.config(text = 'The winner is... Me! 😥', fg = 'indianred1')
         else:
-            self.winner.config(text = 'The game was a draw! 😲')
+            self.winner.config(text = 'The game was a draw! 😲', fg = 'orange')
 
 root = Tk()
 root.title('Rock Paper Scissors')
